@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  src: url('../fonts/PROXIMA_NOVA_REGULAR.OTF');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 700;
+  src: url('../fonts/PROXIMA_NOVA_BOLD.OTF');
+}
+
 html {
   min-height: 100vh;
 }
@@ -7,7 +19,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 16px;
   color: #222;
 }
