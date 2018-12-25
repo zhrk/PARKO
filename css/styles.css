@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   font-family: 'Proxima Nova', sans-serif;
   font-size: 16px;
-  color: #222;
+  color: #333;
 }
 
 a {
@@ -46,4 +46,263 @@ textarea::placeholder {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+}
+
+
+
+
+/* HEADER START */
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.header__logo {
+  display: flex;
+  background-color: #673549;
+  background-image: linear-gradient(-35deg, #f8a24d 0%, #ab435a 50%, #663366 100%);
+}
+
+.header__logo-letter {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-letter > span {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding-top: 3px;
+  padding-left: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.75px;
+  text-transform: uppercase;
+}
+
+.header__logo-word {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 35.63px;
+  text-transform: uppercase;
+}
+
+.header__logo--no-word {
+  width: 100px;
+}
+
+.header__logo--no-word > .header__logo-word {
+  display: none;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.header__description {
+  max-width: 175px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav > ul {
+  display: flex;
+}
+
+.header__nav > ul > li {
+  height: 100%;
+}
+
+.header__nav > ul > li:not(:last-child) {
+  margin-right: 90px;
+}
+
+.header__nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 4px solid #fff;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: #bb555c;
+  border-top: 4px solid #bb555c;
+}
+
+.header__call {
+  display: flex;
+  align-items: center;
+}
+
+.header__call-number {
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__call-number:hover {
+  color: #bb555c;
+}
+
+/* HEADER END */
+
+
+
+
+/* BTN START */
+
+.btn {
+  height: 50px;
+  border-radius: 25px;
+  border: 0;
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 8px 8px rgba(102, 102, 102, 0.16);
+  background-color: #191919;
+  background-image: linear-gradient(-35deg, #f8a24d 0%, #ab435a 50%, #663366 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 7px 9px rgba(102, 102, 102, 0.4);
+}
+
+/* BTN END */
+
+
+
+
+/* MENU START */
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100%;
+}
+
+/* MENU END */
+
+
+
+
+/* FULLPAGE START */
+
+#fullpage {
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+#fp-nav.fp-right {
+  right: 34px !important;
+}
+
+#fp-nav > ul > li:not(:last-child) {
+  margin-bottom: 44px !important;
+}
+
+#fp-nav > ul > li > a {
+  width: 8px !important;
+  height: 8px !important;
+  display: block;
+  background-color: #000;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+#fp-nav > ul > li > a:after {
+  opacity: 0;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b95158;
+  border-radius: 50%;
+  transform: translate(-7px, -7px) scale(0.5);
+  transition: all .2s ease-in-out;
+}
+
+#fp-nav > ul > li > a.active {
+  background-color: #bb555c;
+}
+
+#fp-nav > ul > li > a.active:after {
+  opacity: 1;
+  transform: translate(-7px, -7px) scale(1);
+}
+
+#fp-nav > ul > li > a > span {
+  display: none !important;
+}
+
+/* FULLPAGE END */
+
+
+
+
+/* WELCOME START */
+
+.welcome {
+  
 }

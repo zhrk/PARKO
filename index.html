@@ -11,9 +11,52 @@
     <meta name="msapplication-navbutton-color" content="#663366">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="libs/fullPage.js/fullpage.min.css">
     <title>Parko</title>
   </head>
   <body>
+
+    <header class="header">
+      <a href="" class="header__logo"> <!-- .header__logo--no-word -->
+        <div class="header__logo-letter">
+          <span>P</span>
+        </div>
+        <h1 class="header__logo-word">parko</h1>
+      </a>
+      <div class="header__inner">
+        <div class="header__description">Интернет агенство полного цикла</div>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="" class="header__nav-link">О нас</a>
+            </li>
+            <li>
+              <a href="" class="header__nav-link">Услуги</a>
+            </li>
+            <li>
+              <a href="" class="header__nav-link">Портфолио</a>
+            </li>
+            <li>
+              <a href="" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__call">
+          <a href="tel:88001234567" class="header__call-number">8 800 1234567</a>
+          <button type="button" class="btn">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="menu"></section>
+
+    <main id="fullpage">
+      <section class="welcome fullpage__section"></section>
+    </main>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/fullPage.js/fullpage.min.js"></script>
     <script src="js/js.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
