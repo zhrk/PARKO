@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="libs/fullPage.js/fullpage.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
     <title>Parko</title>
   </head>
   <body>
@@ -43,7 +44,7 @@
         </nav>
         <div class="header__call">
           <a href="tel:88001234567" class="header__call-number">8 800 1234567</a>
-          <button type="button" class="btn">Заказать звонок</button>
+          <button type="button" class="btn btn--gradient">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -82,11 +83,59 @@
     </section>
 
     <main id="fullpage">
-      <section class="welcome fullpage__section"></section>
+
+      <section class="welcome fullpage__section swiper-container">
+        <div class="swiper-wrapper">
+
+          <section class="welcome__slide swiper-slide">
+            <div class="welcome__slide-bg">
+              <img src="img/welcome/bg-1.jpg" alt="background" aria-hidden="true">
+            </div>
+            <div class="welcome__slide-inner">
+              <div class="welcome__slide-info">
+                <h2>Сайт и логотип частного пансионата для пожилых.</h2>
+                <p>Агенством «Parko» был разработан сайт и логотип для
+                  частного пансионата для пожилых — «Cтолетник». Счастливого отдыха!</p>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+              <div class="welcome__slide-img">
+                <img src="img/welcome/laptop.png" alt="Столетник">
+              </div>
+            </div>
+          </section>
+
+          <section class="welcome__slide swiper-slide">
+            <div class="welcome__slide-bg">
+              <img src="img/welcome/bg-1.jpg" alt="background" aria-hidden="true">
+            </div>
+            <div class="welcome__slide-inner">
+              <div class="welcome__slide-info">
+                <h2>Сайт и логотип частного пансионата для пожилых.</h2>
+                <p>Агенством «Parko» был разработан сайт и логотип для
+                  частного пансионата для пожилых — «Cтолетник». Счастливого отдыха!</p>
+                <a href="" class="btn">Подробнее</a>
+              </div>
+              <div class="welcome__slide-img">
+                <img src="img/welcome/laptop.png" alt="Столетник">
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="welcome__arrow swiper-button-prev">
+          <img src="img/icons/arrow-left.png" alt="Предыдущий слайд">
+        </div>
+        <div class="welcome__arrow swiper-button-next">
+          <img src="img/icons/arrow-right.png" alt="Следующий слайд">
+        </div>
+      </section>
+      
     </main>
 
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/fullPage.js/fullpage.min.js"></script>
+    <script src="libs/swiper/swiper.min.js"></script>
     <script src="js/js.js"></script>
     <script src="js/home.js"></script>
   </body>

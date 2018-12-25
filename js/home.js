@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   
   //fullscreen scroll
   $('#fullpage').fullpage({
@@ -10,5 +10,21 @@ $(document).ready(function() {
     verticalCentered: false,
     paddingTop: '100px'
   });
+
+  var welcomeSwiper = new Swiper('.welcome', {
+    init: false,
+    speed: 500,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    watchSlidesProgress: true
+  });
+
+  welcomeSwiper.init();
 
 });
