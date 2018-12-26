@@ -5,10 +5,8 @@ $(document).ready(function () {
     navigation: true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     sectionSelector: '.fullpage__section',
-    anchors: ['1'],
-    /* menu: '#fullpage__menu', */
-    verticalCentered: false,
-    paddingTop: '100px'
+    anchors: ['1', '2', '3'],
+    verticalCentered: false
   });
 
   var welcomeSwiper = new Swiper('.welcome', {
