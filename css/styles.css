@@ -805,3 +805,47 @@ textarea::placeholder {
 }
 
 /* SERVICES END */
+
+
+
+
+/* ADD-SERVICES START */
+
+.add-services {
+  display: flex;
+}
+
+.add-services__img {
+  width: 50%;
+}
+
+.add-services__img > .swiper-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add-services__img.swiper-container {
+  margin: 0;
+}
+
+.add-services__info {
+  width: 50%;
+  background-color: #213ed5;
+  background-image: linear-gradient(-225deg, #f4f5fa 40%, #bdbfcb 90%, #bdbfcb 100%);
+  box-sizing: border-box;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-services__info > h2 {
+  max-width: 394px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-left: 300px;
+}
+
+/* ADD-SERVICES END */

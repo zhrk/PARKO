@@ -9,9 +9,11 @@ $(document).ready(function () {
     verticalCentered: false
   });
 
+  //welcome slider
   var welcomeSwiper = new Swiper('.welcome', {
     init: false,
     speed: 500,
+    simulateTouch: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction'
@@ -19,10 +21,18 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-    watchSlidesProgress: true
+    }
   });
 
   welcomeSwiper.init();
+
+  //add-services hover imgs
+  var addServicesSwiper = new Swiper('.add-services__img', {
+    init: false,
+    effect: 'fade',
+    simulateTouch: false
+  });
+
+  addServicesSwiper.init();
 
 });
