@@ -814,7 +814,7 @@ textarea::placeholder {
 
 .add-services__img {
   width: 50%;
-  box-shadow: 0px 3px 10px 0 rgba(115, 143, 147, 0.3);
+  box-shadow: 2px 3px 7px 0 rgba(115, 143, 147, 0.3);
 }
 
 .add-services__img > .swiper-wrapper > img {
@@ -863,7 +863,7 @@ textarea::placeholder {
   flex-direction: column;
 }
 
-.add-services__info > ul > li {
+.add-services__nav-item {
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
@@ -871,12 +871,8 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.add-services__info > ul > li:hover {
+.add-services__info > ul > .add-services__nav-item:hover {
   background-color: #fff;
-}
-
-.add-services__info > ul > li:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .add-services__info-number {
@@ -885,6 +881,7 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   position: relative;
+  pointer-events: none;
 }
 
 .add-services__info-number:after {
@@ -899,9 +896,10 @@ textarea::placeholder {
   transition: all 0.4s ease-in-out;
   pointer-events: none;
   z-index: 1;
+  pointer-events: none;
 }
 
-.add-services__info > ul > li:hover > .add-services__info-number:after {
+.add-services__nav-item:hover > .add-services__info-number:after {
   transform: translateY(-50%) scale(1);
 }
 
@@ -911,10 +909,71 @@ textarea::placeholder {
   margin-left: 140px;
   font-weight: 400;
   transition: all 0.2s ease-in-out;
+  pointer-events: none;
 }
 
-.add-services__info > ul > li:hover > .add-services__info-title {
+.add-services__nav-item:hover > .add-services__info-title {
   color: #bb555c;
+}
+
+@media (max-width: 1919px) {
+
+  .add-services__info > h2 {
+    margin-left: 200px;
+  }
+
+  .add-services__info-title {
+    margin-left: 40px;
+  }
+
+  .add-services__nav-item {
+    height: 50px;
+  }
+
+}
+
+@media (max-width: 1599px) {
+
+  .add-services__info-number {
+    width: 100px;
+  }
+
+  .add-services__info:before {
+    left: 100px;
+  }
+
+  .add-services__info > h2 {
+    margin-left: 140px;
+  }
+
+}
+
+@media (min-width: 1365px) and (max-width: 1439px) {
+
+  .add-services__info > h2 {
+    font-size: 36px;
+  }
+
+  .add-services__nav-item {
+    height: 40px;
+  }
+
+  .add-services__info-title {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 1365px) {
+
+  .add-services__info > h2 {
+    font-size: 40px;
+  }
+
+  .add-services__info-title {
+    font-size: 22px;
+  }
+
 }
 
 /* ADD-SERVICES END */

@@ -28,11 +28,13 @@ $(document).ready(function () {
 
   //add-services hover imgs
   var addServicesSwiper = new Swiper('.add-services__img', {
-    init: false,
     effect: 'fade',
     simulateTouch: false
   });
 
-  addServicesSwiper.init();
+  $('.add-services__nav-item').on('mouseover', function(event) {
+    var hoverSlide = event.target.dataset.addSlide;
+    addServicesSwiper.slideTo(hoverSlide);
+  });
 
 });
