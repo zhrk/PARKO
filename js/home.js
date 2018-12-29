@@ -5,13 +5,12 @@ $(document).ready(function () {
     navigation: true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     sectionSelector: '.fullpage__section',
-    anchors: ['1', '2', '3'],
+    anchors: ['1', '2', '3', '4', '5', '6', '7'],
     verticalCentered: false
   });
 
   //welcome slider
   var welcomeSwiper = new Swiper('.welcome', {
-    init: false,
     speed: 500,
     simulateTouch: false,
     pagination: {
@@ -24,8 +23,6 @@ $(document).ready(function () {
     }
   });
 
-  welcomeSwiper.init();
-
   //add-services hover imgs
   var addServicesSwiper = new Swiper('.add-services__img', {
     effect: 'fade',
@@ -35,6 +32,33 @@ $(document).ready(function () {
   $('.add-services__nav-item').on('mouseover', function(event) {
     var hoverSlide = event.target.dataset.addSlide;
     addServicesSwiper.slideTo(hoverSlide);
+  });
+
+  //team slider
+  var teamSwiper = new Swiper('.team__list', {
+    speed: 500,
+    slidesPerView: 4,
+    spaceBetween: 50,
+    simulateTouch: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1919: {
+        slidesPerView: 3
+      },
+      1439: {
+        slidesPerView: 4
+      },
+      1365: {
+        slidesPerView: 3
+      }
+    }
   });
 
 });
