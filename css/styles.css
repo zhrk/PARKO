@@ -135,7 +135,6 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   font-size: 20px;
-  font-weight: 400;
   line-height: 27px;
 }
 
@@ -612,7 +611,6 @@ textarea::placeholder {
   max-width: 460px;
   color: #ffff;
   font-size: 18px;
-  font-weight: 400;
   line-height: 28px;
 }
 
@@ -745,7 +743,6 @@ textarea::placeholder {
   margin-bottom: 25px;
   max-width: 260px;
   font-size: 20px;
-  font-weight: 400;
   line-height: 27px;
 }
 
@@ -817,6 +814,7 @@ textarea::placeholder {
 
 .add-services__img {
   width: 50%;
+  box-shadow: 0px 3px 10px 0 rgba(115, 143, 147, 0.3);
 }
 
 .add-services__img > .swiper-wrapper > img {
@@ -838,6 +836,17 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.add-services__info:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+  left: 160px;
 }
 
 .add-services__info > h2 {
@@ -846,6 +855,66 @@ textarea::placeholder {
   font-weight: 700;
   line-height: 48px;
   margin-left: 300px;
+}
+
+.add-services__info > ul {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-services__info > ul > li {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  height: 60px;
+  cursor: pointer;
+}
+
+.add-services__info > ul > li:hover {
+  background-color: #fff;
+}
+
+.add-services__info > ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.add-services__info-number {
+  line-height: 27px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.add-services__info-number:after {
+  content: '';
+  height: 1px;
+  width: 100px;
+  background-color: #ccc;
+  position: absolute;
+  left: 130px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.add-services__info > ul > li:hover > .add-services__info-number:after {
+  transform: translateY(-50%) scale(1);
+}
+
+.add-services__info-title {
+  font-size: 24px;
+  line-height: 27px;
+  margin-left: 140px;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-services__info > ul > li:hover > .add-services__info-title {
+  color: #bb555c;
 }
 
 /* ADD-SERVICES END */
