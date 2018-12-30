@@ -61,4 +61,28 @@ $(document).ready(function () {
     }
   });
 
+  //clients slider
+  var clientsSwiper = new Swiper('.clients__list', {
+    speed: 500,
+    slidesPerView: 7,
+    spaceBetween: 50,
+    simulateTouch: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1919: {
+        slidesPerView: 6
+      },
+      1599: {
+        slidesPerView: 5
+      }
+    }
+  });
+
 });
