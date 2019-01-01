@@ -85,4 +85,31 @@ $(document).ready(function () {
     }
   });
 
+  //feed slider
+  var feedSwiper = new Swiper('.feed__list', {
+    speed: 500,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    simulateTouch: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1919: {
+        slidesPerView: 2
+      },
+      /* 1439: {
+        slidesPerView: 4
+      },
+      1365: {
+        slidesPerView: 3
+      } */
+    }
+  });
+
 });
