@@ -1309,6 +1309,12 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: grayscale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.clients__item-img:hover {
+  filter: grayscale(0);
 }
 
 .clients__item-img > img {
