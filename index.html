@@ -13,6 +13,7 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="libs/fullPage.js/fullpage.min.css">
     <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="libs/nice-select/nice-select.css">
     <title>Parko</title>
   </head>
   <body>
@@ -541,13 +542,55 @@
         </div>
       </section>
 
-      <section class="contacts fullpage__section"></section>
+      <section class="contacts fullpage__section">
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__title-text"> <span>Нашего</span> офиса</div>
+            <div class="contacts__info-inner">
+              <h3>Телефон:</h3>
+              <p>8(495)790-86-97</p>
+              <h3>Адрес:</h3>
+              <p>г. Москва, ул. Новослободская 16, офис 303, 77 шагов от метро «Менделеевская».</p>
+              <h3>E-mail:</h3>
+              <p>info@parko.agency</p>
+            </div>
+          </div>
+          <form class="contacts__form">
+            <h3 class="contacts__form-title">Оставить заявку</h3>
+            <div class="contacts__form-inputs">
+              <input required type="text" class="contacts__form-input" placeholder="Как к Вам обращаться?">
+              <input required type="text" class="contacts__form-input" placeholder="Ваш номер телефона">
+              <input required type="email" class="contacts__form-input" placeholder="Ваш E-mail">
+            </div>
+            <select class="contacts__form-select">
+              <option disabled selected>Выберите интересующую Вас услугу</option>
+              <option value="">Веб-дизайн</option>
+              <option value="">Веб-дизайн</option>
+              <option value="">Веб-дизайн</option>
+            </select>
+            <textarea class="contacts__form-textarea" placeholder="Опишите, что Вам необходимо и наш специалист
+            максимально подробно сможет проконсультировать Вас по интересующей услуге"></textarea>
+            <div class="contacts__love">Ни одной заявки не оставим без ответа</div>
+            <div class="contacts__form-data">
+              <input type="checkbox" id="personal">
+              <label class="form__checkbox" for="personal"></label>
+              <span>
+                Согласен на
+                <a href="" target="_blank">обработку моих данных</a>
+              </span>
+            </div>
+            <button class="btn btn--gradient">Отправить</button>
+          </form>
+        </div>
+      </section>
       
     </main>
 
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/fullPage.js/fullpage.min.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
+    <script src="libs/nice-select/nice-select.min.js"></script>
     <script src="js/js.js"></script>
     <script src="js/home.js"></script>
   </body>

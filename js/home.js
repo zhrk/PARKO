@@ -102,14 +102,10 @@ $(document).ready(function () {
     breakpoints: {
       1919: {
         slidesPerView: 2
-      },
-      /* 1439: {
-        slidesPerView: 4
-      },
-      1365: {
-        slidesPerView: 3
-      } */
+      }
     }
   });
+
+  $('.contacts__form-select').niceSelect();
 
 });
