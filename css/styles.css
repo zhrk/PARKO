@@ -436,6 +436,92 @@ textarea::placeholder {
   animation-iteration-count: infinite;
 }
 
+.menu__popup {
+  width: 950px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  right: 0;
+  padding-left: 70px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #c1c4cb;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-120%);
+  opacity: 0;
+  box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+}
+
+.menu__popup--visible {
+  transform: translateX(0);
+  pointer-events: all;
+  opacity: 1;
+}
+
+.menu__popup-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__popup > .menu__popup-col {
+  margin-right: 50px;
+}
+
+.menu__popup-nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.menu__popup-col > .menu__popup-nav {
+  margin-bottom: 30px;
+}
+
+.menu__popup-nav > ul > li > a {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__popup-nav > ul > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.menu__popup-nav > ul > li > a:hover {
+  color: #bb555c;
+}
+
+.menu__popup-nav > ul > li > span {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.menu__popup-nav > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1919px) {
+
+  .menu__popup {
+    width: 800px;
+  }
+
+  .menu__popup-nav > ul > li > a {
+    font-size: 16px;
+  }
+
+}
+
 @media (min-width: 1365px) and (max-width: 1439px) {
 
   .menu__social:after {
@@ -444,6 +530,33 @@ textarea::placeholder {
 
   .menu__mouse:before {
     height: 60px;
+  }
+
+  .menu__popup {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 700px;
+  }
+
+  .menu__popup-nav > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .menu__popup-nav > ul > li > a {
+    font-size: 14px;
+  }
+  
+  .menu__popup-col > .menu__popup-nav {
+    margin-bottom: 20px;
+  }
+
+  .btn--menu {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .menu__popup-nav > ul > li > span {
+    font-size: 16px;
   }
 
 }
