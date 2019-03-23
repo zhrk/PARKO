@@ -525,6 +525,7 @@ textarea::placeholder {
 }
 
 .menu__hamburger {
+  height: 19px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -533,6 +534,8 @@ textarea::placeholder {
 .menu__hamburger > div {
   width: 26px;
   height: 3px;
+  min-height: 3px;
+  max-height: 3px;
   background-color: #000;
   transition: all 0.2s ease-in-out;
 }
@@ -550,7 +553,6 @@ textarea::placeholder {
 }
 
 .menu__hamburger--veritcal-center {
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -597,7 +599,7 @@ textarea::placeholder {
 }
 
 .menu__popup {
-  width: 950px;
+  width: 880px;
   height: 100%;
   background-color: #fff;
   position: absolute;
@@ -607,11 +609,12 @@ textarea::placeholder {
   padding-left: 70px;
   padding-top: 40px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   box-sizing: border-box;
   border: 1px solid #c1c4cb;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: translateX(-120%);
   opacity: 0;
   box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
@@ -621,6 +624,43 @@ textarea::placeholder {
   transform: translateX(0);
   pointer-events: all;
   opacity: 1;
+}
+
+.menu__services {
+  display: flex;
+  background: url('../img/menu/services.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.menu__main {
+  display: flex;
+  margin-top: 50px;
+}
+
+.menu__main-information {
+  background: url('../img/menu/info.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.menu__main-information-margin {
+  margin-bottom: 50px !important;
+}
+
+.menu__services > nav > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 325px;
+}
+
+.menu__services > nav > ul > li {
+  margin-right: 90px;
+}
+
+.menu__services > nav > ul > li > a {
+  white-space: nowrap;
 }
 
 .menu__popup-col {
@@ -636,6 +676,22 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   max-width: 360px;
+  min-width: 310px;
+}
+
+.menu__popup-nav--information {
+  margin-right: 70px;
+}
+
+.menu__main-contacts {
+  margin-top: 50px;
+  background: url('../img/menu/contacts.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.menu__main-contacts > li:not(:last-child) {
+  margin-bottom: 30px !important;
 }
 
 .menu__popup-col > .menu__popup-nav {
@@ -644,7 +700,7 @@ textarea::placeholder {
 
 .menu__popup-nav > ul > li > a {
   color: #333333;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -668,65 +724,6 @@ textarea::placeholder {
 .menu__popup-nav > ul > li {
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 1919px) {
-
-  .menu__popup {
-    width: 800px;
-  }
-
-  .menu__popup-nav > ul > li > a {
-    font-size: 16px;
-  }
-
-}
-
-@media (min-width: 1365px) and (max-width: 1439px) {
-
-  .menu__social:after {
-    height: 60px;
-  }
-
-  .menu__mouse:before {
-    height: 60px;
-  }
-
-  .menu__popup {
-    padding-top: 20px;
-    padding-left: 20px;
-    width: 700px;
-  }
-
-  .menu__popup-nav > ul > li:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .menu__popup-nav > ul > li > a {
-    font-size: 14px;
-  }
-  
-  .menu__popup-col > .menu__popup-nav {
-    margin-bottom: 20px;
-  }
-
-  .btn--menu {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .menu__popup-nav > ul > li > span {
-    font-size: 16px;
-  }
-
-}
-
-@media (max-width: 1279px) {
-
-  .menu {
-    display: none;
-  }
-
 }
 
 /* MENU END */
