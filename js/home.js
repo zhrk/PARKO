@@ -6,7 +6,8 @@ $(document).ready(function () {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     sectionSelector: '.fullpage__section',
     anchors: ['1', '2', '3', '4', '5', '6', '7'],
-    verticalCentered: false
+    verticalCentered: false,
+    responsiveWidth: 1280,
   });
 
   //welcome slider

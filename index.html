@@ -105,7 +105,14 @@
     </header>
 
     <section class="menu">
-      <div class="menu__popup">
+      <div class="menu__tabs">
+        <button class="menu__close">
+          <img src="img/menu/close_button.svg" alt="">
+        </button>
+        <button class="menu__tabs-btn menu__tabs-btn--main active">Меню</button>
+        <button class="menu__tabs-btn menu__tabs-btn--services">Услуги</button>
+      </div>
+      <div class="menu__popup menu__main--visible">
         <div class="menu__services">
           <nav class="menu__popup-nav">
             <ul>
@@ -189,7 +196,7 @@
               </li>
             </ul>
           </nav>
-          <nav class="menu__popup-nav">
+          <nav class="menu__popup-nav menu__popup-nav--contacts">
             <div class="btn btn--menu btn--gradient">СМОТРЕТЬ ПРЕЗЕНТАЦИЮ</div>
             <ul class="menu__main-contacts">
               <li>
@@ -203,6 +210,22 @@
               <li>
                 <span>E-mail:</span>
                 <a href="mailto:info@parko.agency">info@parko.agency</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu__popup-nav menu__popup-nav--header">
+            <ul>
+              <li>
+                <a href="" class="header__nav-link">О нас</a>
+              </li>
+              <li>
+                <a href="" class="header__nav-link">Услуги</a>
+              </li>
+              <li>
+                <a href="" class="header__nav-link">Портфолио</a>
+              </li>
+              <li>
+                <a href="" class="header__nav-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -230,10 +253,7 @@
           </li>
         </ul>
       </nav>
-      <div
-        id="menu"
-        class="menu__hamburger menu__hamburger--align-self-center menu__hamburger--veritcal-center"
-      >
+      <div id="menu" class="menu__hamburger menu__hamburger--align-self-center menu__hamburger--veritcal-center">
         <div></div>
         <div></div>
         <div></div>
