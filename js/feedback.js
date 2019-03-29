@@ -1,3 +1,18 @@
+var callBtn = document.getElementById("feedback__tabs-call");
+var formBtn = document.getElementById("feedback__tabs-form");
+var callBlock = document.querySelector(".feedback__info");
+var formBlock = document.querySelector(".feedback__form");
+
+callBtn.addEventListener("click", function() {
+  formBlock.classList.remove("feedback__form--active");
+  callBlock.classList.add("feedback__info--active");
+});
+
+formBtn.addEventListener("click", function() {
+  callBlock.classList.remove("feedback__info--active");
+  formBlock.classList.add("feedback__form--active");
+});
+
 ymaps.ready(init);
 var myMap;
 
