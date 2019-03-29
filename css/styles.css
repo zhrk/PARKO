@@ -2980,3 +2980,20 @@ textarea::placeholder {
 }
 
 /* PORTFOLIO END */
+
+/* FEEDBACK START */
+
+.feedback {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 100px;
+  display: flex;
+}
+
+.feedback__map {
+  width: 50%;
+}
+
+
+/* FEEDBACK END */
