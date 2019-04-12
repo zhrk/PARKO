@@ -1616,6 +1616,7 @@ textarea::placeholder {
 }
 
 .team__title {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -1645,6 +1646,7 @@ textarea::placeholder {
 .team__list {
   margin-top: 50px !important;
   transform: translateX(-43px);
+  padding-bottom: 90px !important;
 }
 
 .team__member {
@@ -1709,15 +1711,26 @@ textarea::placeholder {
 }
 
 .team__arrow {
-  width: 52px !important;
-  height: 20px !important;
-  background: none !important;
+  min-width: 90px !important;
+  max-width: 90px !important;
+  min-height: 90px !important;
+  max-height: 90px !important;
+  width: 90px !important;
+  height: 90px !important;
+  background-image: none !important;
+  background-color: #fff;
   margin-top: 0 !important;
   top: auto !important;
   bottom: 0 !important;
   transition: all 0.2s ease-in-out;
   position: relative !important;
   outline: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
 }
 
 .team__list.swiper-container {
@@ -1725,12 +1738,13 @@ textarea::placeholder {
 }
 
 .team__nav {
-  margin-top: 60px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1550px;
   width: 100%;
+  height: 90px;
 }
 
 .team__nav > .swiper-pagination {
@@ -1739,6 +1753,10 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   letter-spacing: 4px;
+}
+
+.team__nav > .swiper-pagination.swiper-pagination-fraction {
+  transform: translateY(12px);
 }
 
 .team__nav > .swiper-pagination:before {
@@ -1774,6 +1792,7 @@ textarea::placeholder {
 
 .team .swiper-wrapper {
   max-width: 1550px !important;
+  height: 350px !important;
 }
 
 @media (max-width: 1919px) {
@@ -1855,6 +1874,7 @@ textarea::placeholder {
 }
 
 .clients__title {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -1884,18 +1904,30 @@ textarea::placeholder {
 .clients__list {
   margin-top: 100px !important;
   transform: translateX(-43px);
+  padding-bottom: 90px !important;
 }
 
 .clients__arrow {
-  width: 52px !important;
-  height: 20px !important;
-  background: none !important;
+  min-width: 90px !important;
+  max-width: 90px !important;
+  min-height: 90px !important;
+  max-height: 90px !important;
+  width: 90px !important;
+  height: 90px !important;
+  background-image: none !important;
+  background-color: #fff;
   margin-top: 0 !important;
   top: auto !important;
   bottom: 0 !important;
   transition: all 0.2s ease-in-out;
   position: relative !important;
   outline: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
 }
 
 .clients__list.swiper-container {
@@ -1903,12 +1935,12 @@ textarea::placeholder {
 }
 
 .clients__nav {
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1561px;
   width: 100%;
+  height: 90px;
 }
 
 .clients__nav > .swiper-pagination {
@@ -1924,6 +1956,10 @@ textarea::placeholder {
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
+}
+
+.clients__nav > .swiper-pagination.swiper-pagination-fraction {
+  transform: translateY(12px);
 }
 
 .clients__nav > .swiper-pagination:before {
@@ -1955,6 +1991,7 @@ textarea::placeholder {
   width: 100%;
   display: flex;
   align-items: center;
+  height: 350px !important;
 }
 
 .clients__item {
