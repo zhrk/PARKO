@@ -1602,9 +1602,10 @@ textarea::placeholder {
 /* TEAM START */
 
 .team {
-  background-image: url("../img/team/bg.jpg");
+  background-image: url("../img/team/bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
