@@ -185,7 +185,6 @@ textarea::placeholder {
 
 .header__nav-link:hover {
   color: #bb555c;
-  border-top: 4px solid #bb555c;
 }
 
 .header__call {
@@ -3305,3 +3304,37 @@ textarea::placeholder {
 }
 
 /* ABOUT END */
+
+/* INPUT START */
+
+.input {
+  position: relative;
+}
+
+.input > input {
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #bb555c;
+  height: 26px;
+  padding-bottom: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input > label {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  color: #999;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+
+.input > input:focus ~ label,
+.input > input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+}
+
+/* INPUT END */
