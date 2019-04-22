@@ -97,7 +97,7 @@
           <div></div>
           <div></div>
         </div>
-        <a href="" class="header__logo">
+        <a href="index.html" class="header__logo">
           <!-- .header__logo--no-word -->
           <div class="header__logo-letter">
             <span>P</span>
@@ -364,24 +364,18 @@
               <form class="contacts__form">
                 <h3 class="contacts__form-title">Оставить заявку</h3>
                 <div class="contacts__form-inputs">
-                  <input
-                    required
-                    type="text"
-                    class="contacts__form-input"
-                    placeholder="Как к Вам обращаться?"
-                  />
-                  <input
-                    required
-                    type="text"
-                    class="contacts__form-input"
-                    placeholder="Ваш номер телефона"
-                  />
-                  <input
-                    required
-                    type="email"
-                    class="contacts__form-input"
-                    placeholder="Ваш E-mail"
-                  />
+                  <div class="input contacts__form-input">
+                    <input name="name" required type="text" />
+                    <label>Как к Вам обращаться?</label>
+                  </div>
+                  <div class="input contacts__form-input">
+                    <input name="phone" required type="text" />
+                    <label>Ваш номер телефона</label>
+                  </div>
+                  <div class="input contacts__form-input">
+                    <input name="email" required type="text" />
+                    <label>Ваш E-mail</label>
+                  </div>
                 </div>
                 <select class="contacts__form-select">
                   <option disabled selected
