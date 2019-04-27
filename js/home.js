@@ -106,5 +106,26 @@ $(document).ready(function() {
     grabCursor: true
   });
 
+  //blog slider
+  var blogSwiper = new Swiper(".blog__list", {
+    speed: 500,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      1919: {
+        slidesPerView: 2
+      }
+    },
+    grabCursor: true
+  });
+
   $(".contacts__form-select").niceSelect();
 });
